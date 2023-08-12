@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script language="Javascript">
+            function area()
+            {
+                var a;
+             a=parseInt(f1.t1.value)*parseInt(f1.t2.value)/2;
+             f1.t4.value=+a
+            }
+            function perimeter()
+            {
+                var a,b;
+                a=parseInt(f1.t3.value);
+                b=4*a;
+                f1.t4.value=+b
+            }
+        </script>
+    </head>
+    <body>
+    <font color="Purple">
+        <h1>Formula </h1>
+        <font color="Black"><h3>Rhombus</h3></font>
+    </font>
+    <hr width="150" align="left">
+    Area = Dd/2 <br />
+    Perimeter = 4 x Side 
+    <font color="purple"><h1>Variables</h1></font>
+    <form name="f1">
+        Diameter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="t1"><br><br>
+        diameter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="t2"><br><br />
+        Side &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="t3">
+    <font color="purple"><h1>Calculations</h1></font>
+        <input type="text" name="t4"><br><br />
+        <input type="button" value="Area" onClick="area()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Perimeter" onClick="perimeter()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="Clear">
+        
+    </form>
+    
+    
+        
+    </body>
+</html>
